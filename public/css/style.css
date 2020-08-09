@@ -1,0 +1,87 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+    color: beige;
+}
+body{background-color: #070012;
+    background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    font-size: 3rem;
+}
+#text{
+    margin-bottom: 3rem;
+}
+
+/* button{
+    color: #000;
+    background-color: white;
+    margin-top: 5rem;
+    border-radius: 15px;
+    height: 4rem;
+    width: 10rem;
+    cursor: pointer;
+} */
+.games{
+    width: 90%;
+    margin-top: 15rem;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10rem;
+}
+.games-block {
+    position: relative;
+  width: 30rem;
+  height: 40rem;
+  border-radius: 80px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    font-size: 1.8rem;
+    background-color: beige;
+} 
+.title{
+    cursor: pointer;
+    width: 99%;
+    margin-top: 3rem;
+    color: black;
+    font-size: 2rem;
+}
+.info{
+    width: 90%;
+    font-family: 'Lobster', cursive;
+
+    margin-left: 1rem;
+    margin-top: 2rem;
+    color: black;
+    opacity: 70%;
+    font-size:2.3rem;
+}
+img{
+    width: 30rem;
+    height: 17rem;
+    border-radius: 80px 80px  0px 0px;   
+}
+footer{
+    font-size: 2rem;
+}
+.title:hover{
+    opacity: 50%;
+}
+.blinking{
+	animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+	0%{		color:beige	}
+	49%{	color: blue;	}
+	50%{	color: red;	}
+	99%{	color:yellow;	}
+	100%{	color: green	}
+}

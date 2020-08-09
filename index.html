@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="text">
+    </div>
+    <div class="blinking">
+    HOME FOR ARCADE GAMES
+</div>
+   <div class="games">
+       <div class="games-block">
+        <img src="/images/prison-breakout.png">
+       <div id="breakout">
+           
+           <div class="title" onclick="window.location.href='/breakout'">
+               PRISON BREAKOUT
+           </div>
+           <div class="info">
+            If you think this is just another breakout game, think again.
+        </div>
+       </div>
+    </div>
+    <div class="games-block">
+       <div id="space">
+        <img src="/images/space.png">
+        <div class="title" onclick="window.location.href='/galactic'">
+               GALACTIC DEFENSE
+        </div>
+        <div class="info">
+            Can you defend your planet from asteroid showers? Play to find out!
+
+        </div>
+
+       </div>
+    </div>
+    <div class="games-block">
+       <div class="block">
+        <img src="/images/block2.png">
+        <div class="title" onclick="window.location.href='/block'">
+               BLOCK RUNNER V2
+        </div>
+        <div class="info">
+        Block Runner is a fast paced platformer game.The idea of the game is to get maximum score each time.
+    </div>
+       </div>
+    </div>
+   </div>
+   <footer>
+       More Games Coming soon...
+   </footer>
+</body>
+<script type="text/javascript">
+    var i =0, text;
+    text = "WELCOME TO YOUR PLAYZONE";
+    function typing(){
+        if(i<text.length){
+            document.getElementById("text").innerHTML+= text.charAt(i);
+            i++;
+            setTimeout(typing,50);
+        }
+    } 
+    typing();
+</script>
+</html>
